@@ -50,7 +50,7 @@ Anonymousjournaling::Application.routes.draw do
   # just remember to delete public/index.html.
   root to: 'application#index'
 
-  resources :users, :entries
+  resources :user, :entry
 
   # See how all your routes lay out with "rake routes"
 
