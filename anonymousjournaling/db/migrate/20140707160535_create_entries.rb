@@ -3,6 +3,7 @@ class CreateEntries < ActiveRecord::Migration
     create_table :entries do |t|
       t.belongs_to  :user
       t.string :content
+      t.string :author
       t.timestamps
     end
   end

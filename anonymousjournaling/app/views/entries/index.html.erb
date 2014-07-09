@@ -1,3 +1,8 @@
 <p>This is a list of all the user's journal entries!</p>
+<% @entries.each do |e| %>
+  <%= e.content %>
+  <%= e.created_at %>
+  <%= e.author %>
+<% end %>
 <%= link_to 'Write New Entry', new_entry_path %>
 <%= link_to 'Return Home', root_path %>
