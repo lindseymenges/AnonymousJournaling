@@ -1,6 +1,7 @@
 class EntriesController < ApplicationController
   def index
-    @entries = Entry.where(user_id: session[:user_id])
+    @user_entries = Entry.where(user_id: session[:user_id])
+    @entries = Entry.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
   end
 
   def new
