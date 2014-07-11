@@ -1,4 +1,7 @@
-<div class="entry"><%= @entry.content %></div>
+<%= @entry.content %>
+<% if @entry.user_id == session[:user_id] %>
+  <%= link_to 'Delete This Entry', entry_path(@entry), :method => :delete %>
+<% end %>
 
 <%= link_to 'Return To Entries', entries_path %><br>
 <%= link_to 'Log Out', session_path(session[:user_id]), :method => :delete %>
