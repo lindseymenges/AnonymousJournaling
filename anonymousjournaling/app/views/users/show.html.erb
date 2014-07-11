@@ -1,1 +1,10 @@
 <p>This is the 'show' page, alright</p>
+<p>You have reached the profile page of <%= @user.public_username %></p>
+<ul>
+<% @entries.each do |e| %>
+  <li>
+    <%= link_to e.title, entry_path(e.id) %>
+  </li>
+<% end %>
+</ul>
+<%= link_to 'Return Home', root_path %>

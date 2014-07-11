@@ -12,6 +12,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:id])
+    @entries = Entry.where(user_id: @user.id)
   end
 
   def new
@@ -38,13 +40,9 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(session[:user_id])
     posts = Entry.find_by_user_id(@user.id)
-    if @user.authenticate(params[:password])
-      posts.destroy
-      @user.destroy
-      session.clear
-      redirect_to root_path
-    else
-      render :login_error
-    end
+    posts.destroy
+    @user.destroy
+    session.clear
+    redirect_to root_path
   end
 end

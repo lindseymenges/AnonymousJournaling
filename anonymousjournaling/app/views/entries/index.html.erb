@@ -7,7 +7,7 @@
 <p>This is a list of all the entries in general!</p>
 <% @entries.each do |e| %>
   <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
-  <%= e.author %>
+  <%= link_to e.author, user_path(e.user_id) %>
   <%= e.created_at %><br>
 <% end %>
 
