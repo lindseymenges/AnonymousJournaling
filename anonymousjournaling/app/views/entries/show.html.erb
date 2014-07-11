@@ -1,0 +1,4 @@
+<div class="entry"><%= @entry.content %></div>
+
+<%= link_to 'Return To Entries', entries_path %><br>
+<%= link_to 'Log Out', session_path(session[:user_id]), :method => :delete %>

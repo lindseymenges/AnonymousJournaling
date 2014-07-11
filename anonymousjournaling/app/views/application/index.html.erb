@@ -1,7 +1,7 @@
 <p>You are in the index route! Heck yeah!</p>
 <% if session[:user_id] %>
   <p>We're in a session!</p>
-  <%= link_to 'View Your Journal', entries_path, :method => :show %>
+  <%= link_to 'View Your Journal', entries_path %>
   <%= link_to 'Log Out', session_path(session[:user_id]), :method => :delete %>
 <% else %>
   <%= link_to "Sign-in", new_session_path %>
