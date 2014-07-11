@@ -1,10 +1,10 @@
-<p>This is a list of all the user's journal entries!</p>
+<h3>Your Journal Entries:</h3>
 <% @user_entries.each do |e| %>
   <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
   <%= e.created_at %><br>
 <% end %>
 
-<p>This is a list of all the entries in general!</p>
+<h3>Recent 'Anonymous Journaling' Entries</h3>
 <% @entries.each do |e| %>
   <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
   <%= link_to e.author, user_path(e.user_id) %>
