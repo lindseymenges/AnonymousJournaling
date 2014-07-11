@@ -1,0 +1,12 @@
+body{
+  background-color: #eff0eb;
+}
+
+header{
+  text-align: center;
+  width: 100%;
+  font-size: 2.75em;
+  background-color: #58a291;
+  padding: 1% 0;
+  font-family: 'Indie Flower', cursive;
+}
