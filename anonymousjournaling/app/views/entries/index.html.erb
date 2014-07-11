@@ -11,7 +11,7 @@
   <%= e.created_at %><br>
 <% end %>
 
-<%= will_paginate @entries %>
+<div class="pagination"><%= will_paginate @entries %></div>
 
 <%= link_to 'Write New Entry', new_entry_path %>
 <%= link_to 'Return Home', root_path %>

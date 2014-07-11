@@ -1,7 +1,8 @@
-<p>This is the new entry page, yay!</p>
 <%= form_for @entry do |f| %>
-  <%= f.label :content %>
-  <%= f.text_field :content %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %><br>
+  <%= f.text_area :content %>
   <%= f.submit %>
 <% end %>
 <%= link_to 'Return Home', root_path %>
