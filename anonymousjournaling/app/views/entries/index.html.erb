@@ -1,12 +1,12 @@
 <p>This is a list of all the user's journal entries!</p>
 <% @user_entries.each do |e| %>
-  <%= e.content %><br>
+  <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
   <%= e.created_at %><br>
 <% end %>
 
 <p>This is a list of all the entries in general!</p>
 <% @entries.each do |e| %>
-  <%= e.content %><br>
+  <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
   <%= e.author %>
   <%= e.created_at %><br>
 <% end %>
