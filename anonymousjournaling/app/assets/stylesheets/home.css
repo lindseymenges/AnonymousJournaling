@@ -1,0 +1,23 @@
+.sign_in, .sign_up{
+  margin-top: 10%;
+  width: 33%;
+  margin-left: 33%;
+}
+
+.sign_in{
+  background-color: #636c4d;
+  padding: 1%;
+}
+
+.sign_in a, .sign_up{
+  color: #9f9c71;
+}
+
+.sign_up{
+  background-color: #9f9c71;
+  padding: 1%;
+}
+
+.sign_up a{
+  color: #636c4d;
+}

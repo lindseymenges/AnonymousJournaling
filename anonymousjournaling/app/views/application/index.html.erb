@@ -1,8 +1,8 @@
 <% if session[:user_id] %>
-  <%= link_to 'View Your Journal', entries_path %>
-  <%= link_to 'Log Out', session_path(session[:user_id]), :method => :delete %>
-  <%= link_to 'Delete Account', user_path(session[:user_id]), :method => :delete %>
+  <div class="button view_journal"><%= link_to 'View Your Journal', entries_path %></div>
+  <div class="button log_out"><%= link_to 'Log Out', session_path(session[:user_id]), :method => :delete %></div>
+  <div class="button delete_account"><%= link_to 'Delete Account', user_path(session[:user_id]), :method => :delete %></div>
 <% else %>
-  <%= link_to "Sign-in", new_session_path %>
-  <%= link_to "Sign-up", new_user_path %>
+  <div class="button sign_in"><%= link_to "Sign-in", new_session_path %></div>
+  <div class="button sign_up"><%= link_to "Sign-up", new_user_path %></div>
 <% end %>
