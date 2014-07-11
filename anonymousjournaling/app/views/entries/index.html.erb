@@ -1,15 +1,23 @@
 <h3>Your Journal Entries:</h3>
-<% @user_entries.each do |e| %>
-  <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
-  <%= e.created_at %><br>
-<% end %>
+<ul>
+  <% @user_entries.each do |e| %>
+    <li>
+      <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
+      <%= e.created_at %><br>
+    </li>
+  <% end %>
+</ul>
 
 <h3>Recent 'Anonymous Journaling' Entries</h3>
-<% @entries.each do |e| %>
-  <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
-  <%= link_to e.author, user_path(e.user_id) %>
-  <%= e.created_at %><br>
-<% end %>
+<ul>
+  <% @entries.each do |e| %>
+    <li>
+      <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
+      <%= link_to e.author, user_path(e.user_id) %>
+      <%= e.created_at %><br>
+    </li>
+  <% end %>
+</ul>
 
 <div class="pagination"><%= will_paginate @entries %></div>
 
