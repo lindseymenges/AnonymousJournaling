@@ -1,4 +1,4 @@
-.sign_in, .sign_up{
+.sign_in, .sign_up, .view_journal, .log_out{
   margin-top: 10%;
   margin-left: 30%;
   width: 33%;
@@ -22,11 +22,34 @@
   color: #636c4d;
 }
 
-.sign_in a, .sign_up a{
+.sign_in a, .sign_up a, .view_journal a, .log_out a{
   font-size: 2.75em;
+}
+
+.view_journal{
+  margin-top: 10%;
+  background-color: #636c4d;
+}
+
+.view_journal a{
+  color: #a0bab9;
+}
+
+.log_out{
+  background-color: #9f9c73;
+}
+
+.log_out a{
+  color: #eff0eb;
 }
 
 .delete_account{
   position: fixed;
   bottom: 0;
+  background-color: #a0bab9;
+  padding: 0.5%;
+}
+
+.delete_account a{
+  color: #eff0eb;
 }
