@@ -1,0 +1,26 @@
+body{
+  background-color: #eff0eb;
+  font-family: 'Indie Flower', cursive;
+}
+
+.nav_bar{
+  width: 100%;
+  background-color: #58a291;
+  padding: 1% 0;
+  
+}
+
+header{
+  text-align: center;
+  font-size: 3.00em;
+  color: #636c4d;
+}
+
+
+.button{
+  text-align: center;
+}
+
+.button a{
+  text-decoration: none;
+}
