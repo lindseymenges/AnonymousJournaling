@@ -1,19 +1,19 @@
-.sign_in_header, .sign_in_form, .session{
+.sign_in_header, .sign_in_form, .session, .new_user_header, .new_user_form, .new_user{
   text-align: center;
 }
 
-.sign_in_header{
+.sign_in_header, .new_user_header{
   font-size: 2.00em;
   color: #636c4d;
 }
 
-.session{
+.session, .new_user{
   margin: 10px 0;
   font-size: 1.50em;
   color: #55a393;
 }
 
-.session_submit{
+.session_submit, .new_user_submit{
   padding: 2% 5%;
   background-color: #9f9b75;
   border-color: #9f9b75;
