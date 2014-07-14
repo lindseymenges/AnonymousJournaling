@@ -1,15 +1,13 @@
 <div class="user_entries_section">
   <div class="user_entries_elements">
   <h3 class="user_entries_header">Your Journal Entries:</h3>
-  <ul class="user_entries">
     <% @user_entries.each do |e| %>
       <li>
         <a href='/entries/<%= e.id%>' class="entry_title"><%=e.title%></a><br>
         <div class="created_at"><%= e.created_at %></div>
       </li>
     <% end %>
-  </ul>
-  <div class="user_entries user_entries_links">
+  <div class="user_entries_links">
     <%= link_to 'Write New Entry', new_entry_path, :class => "new_entry_link" %>
     <%= link_to 'Return Home', root_path, :class => "return_home_link" %>
   </div>
