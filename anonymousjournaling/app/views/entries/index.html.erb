@@ -1,25 +1,32 @@
-<h3>Your Journal Entries:</h3>
-<ul>
-  <% @user_entries.each do |e| %>
-    <li>
-      <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
-      <%= e.created_at %><br>
-    </li>
-  <% end %>
-</ul>
+<div class="user_entries_section">
+  <div class="user_entries_elements">
+  <h3 class="user_entries">Your Journal Entries:</h3>
+  <ul class="user_entries">
+    <% @user_entries.each do |e| %>
+      <li>
+        <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
+        <%= e.created_at %><br>
+      </li>
+    <% end %>
+  </ul>
+  <div class="user_entries user_entries_links">
+    <%= link_to 'Write New Entry', new_entry_path %>
+    <%= link_to 'Return Home', root_path %>
+  </div>
+  </div>
+</div>
 
-<h3>Recent 'Anonymous Journaling' Entries</h3>
-<ul>
-  <% @entries.each do |e| %>
-    <li>
-      <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
-      <%= link_to e.author, user_path(e.user_id) %>
-      <%= e.created_at %><br>
-    </li>
-  <% end %>
-</ul>
+<div class="recent_entries">
+  <h3>Recent 'Anonymous Journaling' Entries</h3>
+  <ul>
+    <% @entries.each do |e| %>
+      <li>
+        <a href='/entries/<%= e.id%>'><%=e.title%></a><br>
+        <%= link_to e.author, user_path(e.user_id) %><br>
+        <%= e.created_at %><br>
+      </li>
+    <% end %>
+  </ul>
+</div>
 
 <div class="pagination"><%= will_paginate @entries %></div>
-
-<%= link_to 'Write New Entry', new_entry_path %>
-<%= link_to 'Return Home', root_path %>

@@ -1,0 +1,11 @@
+.user_entries_section, .recent_entries{
+  width: 49%;
+}
+
+.user_entries_section{
+  float: left;
+}
+
+.recent_entries, .user_entries_elements{
+  float: right;
+}
