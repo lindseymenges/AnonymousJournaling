@@ -62,3 +62,12 @@ li{
 .author_link{
   color: #a1b9b9;
 }
+
+.pagination{
+  color: #636c4f;
+  font-size: 1.25em;
+}
+
+.pagination a{
+  color: #a0bab9;
+}
