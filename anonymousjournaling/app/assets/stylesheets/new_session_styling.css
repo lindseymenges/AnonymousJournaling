@@ -1,0 +1,37 @@
+.sign_in_header, .sign_in_form, .session{
+  text-align: center;
+}
+
+.sign_in_header{
+  font-size: 2.00em;
+  color: #636c4d;
+}
+
+.session{
+  margin: 10px 0;
+  font-size: 1.50em;
+  color: #55a393;
+}
+
+.session_submit{
+  padding: 2% 5%;
+  background-color: #9f9b75;
+  border-color: #9f9b75;
+  color: #636c4d;
+}
+
+::-webkit-input-placeholder {
+   color: #9dbbbb;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #9dbbbb;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #9dbbbb;  
+}
+
+:-ms-input-placeholder {  
+   color: #9dbbbb;  
+}
