@@ -1,4 +1,4 @@
-<%= @entry.content %><br>
+<%= @entry.content.gsub(/\n/, '<br/>').html_safe %><br>
 <% if @entry.user_id == session[:user_id] %>
   <%= link_to 'Delete This Entry', entry_path(@entry), :method => :delete %>
 <% end %>
