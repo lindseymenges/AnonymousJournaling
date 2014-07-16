@@ -8,7 +8,14 @@
   <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="nav_bar"><header><%= link_to "Anonymous Journaling", root_path %></header></div>
+  <div class="nav_bar">
+    <header>
+    <%= link_to "Anonymous Journaling", root_path %>
+    <% if session[:user_id] %>
+      <%= link_to "Log Out", session_path(session[:user_id]), :id => "log_out", :method => :delete %>
+    <% end %>
+    </header>
+  </div>
   <%= yield %>
 </body>
 </html>

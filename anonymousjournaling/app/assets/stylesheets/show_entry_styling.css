@@ -1,0 +1,36 @@
+#entry_author{
+  margin-left: 25%;
+  margin-top: 3%;
+  font-size: 1.50em;
+  color: #636c4d;
+}
+.entry_content{
+  margin-top: 1%;
+  padding: 1%;
+  background-color: white;
+  border: 1px solid #9f9b75;
+  color: #53a493;
+  width: 49%;
+  margin-left: 24%;
+}
+
+.entry_buttons{
+  width: 50%;
+  margin-top: 1%; 
+  margin-left: 24%;
+}
+
+#delete_entry, #return_to_entries{
+  margin-right: 2%;
+  padding: 1%;
+}
+
+#delete_entry{
+  background-color: #a0bab9;
+  color: #eff0eb;
+}
+
+#return_to_entries{
+  background-color: #636c4d;
+  color: #eff0eb;
+}
