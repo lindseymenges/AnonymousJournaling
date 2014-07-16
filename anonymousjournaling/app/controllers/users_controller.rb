@@ -8,9 +8,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def index
-  end
-
   def show
     @user = User.find(params[:id])
     @entries = Entry.where(user_id: @user.id)
@@ -29,12 +26,6 @@ class UsersController < ApplicationController
     else
       render :new
     end
-  end
-
-  def edit
-  end
-
-  def update
   end
 
   def destroy
