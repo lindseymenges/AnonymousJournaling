@@ -1,0 +1,12 @@
+#deleted_entry{
+  text-align: center;
+  margin-top: 2%;
+}
+
+#deleted_entry_message{
+  color: #636c4d;
+}
+
+#deleted_entry_return_link{
+  color: #53a493;
+}

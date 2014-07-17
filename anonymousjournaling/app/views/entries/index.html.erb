@@ -17,6 +17,7 @@
 <div class="recent_entries">
   <div class="recent_entries_elements">
     <h3 class="recent_entries_header">Recent 'Anonymous Journaling' Entries:</h3>
+    <div class="all_entries">
       <% @entries.each do |e| %>
         <li>
           <a href='/entries/<%= e.id%>' class="entry_title"><%=e.title%></a><br>
@@ -24,6 +25,7 @@
           <div class="created_at"><%= e.created_at %></div>
         </li>
       <% end %>
+      </div>
     <div class="pagination"><%= will_paginate @entries %></div>
   </div>
 </div>

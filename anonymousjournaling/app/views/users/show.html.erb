@@ -1,9 +1,11 @@
-<h3>You have reached the profile page of <%= @user.public_username %></h3>
-<ul>
-<% @entries.each do |e| %>
-  <li>
-    <%= link_to e.title, entry_path(e.id) %>
-  </li>
-<% end %>
-</ul>
-<%= link_to 'Return Home', root_path %>
+<div class="user_profile">
+  <h3 id="user_profile_title"><%= @user.public_username %></h3>
+  <ul class="user_entries_list">
+    <% @entries.each do |e| %>
+      <li>
+        <%= link_to e.title, entry_path(e.id) %>
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to 'Return Home', root_path, :id => "profile_home_link" %>
+</div>

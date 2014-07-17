@@ -1,0 +1,36 @@
+.user_profile{
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#user_profile_title{
+  font-size: 1.75em;
+  color: #636c4f;
+  margin-bottom: -1%;
+  text-decoration: underline;
+}
+
+.user_entries_list{
+  margin-bottom: 2%;
+}
+
+.user_entries_list li{
+  margin-bottom: 1%;
+}
+
+.user_entries_list li a{
+  color: #53a493;
+  font-size: 1.25em;
+}
+
+.user_entries_list li a:visited{
+  color: #a0bab9;
+}
+
+#profile_home_link{
+  margin-left: 3%;
+  margin-top: 10%;
+  background-color: #9f9b75;
+  padding: 1%;
+  color: #eff0eb;
+}

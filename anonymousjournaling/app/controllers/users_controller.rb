@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def create_public_username
-    full_public_username = Faker::Commerce.product_name + " " + Random.rand(999).to_s
+    full_public_username = Faker::Address.city + " " + Random.rand(999).to_s
     if User.find_by_public_username(full_public_username) == nil
       return full_public_username
     else
@@ -20,9 +20,13 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     @user.public_username = create_public_username
-    if @user.save
-      session[:user_id] = @user.id
-      redirect_to root_path
+    if User.find_by_username(@user.username) == nil
+      if @user.save
+        session[:user_id] = @user.id
+        redirect_to root_path
+      else
+        render :new
+      end
     else
       render :new
     end
