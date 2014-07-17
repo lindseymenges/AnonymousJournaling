@@ -1,0 +1,38 @@
+body{
+  background-color: #eff0eb;
+  font-family: 'Indie Flower', cursive;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav_bar{
+  width: 100%;
+  background-color: #58a291;
+  padding: 1% 0;
+  
+}
+
+header{
+  margin-left: 35%;
+  font-size: 3.00em;
+}
+
+header a{
+  color: #636c4d;
+}
+
+#log_out{
+  float: right;
+  margin-right: 40%;
+  margin-top: 2%;
+  background-color: #636c4d;
+  padding: 0.5% 1%;
+  color: #a1b9b9;
+  font-size: 0.35em;
+}
+
+.button{
+  text-align: center;
+}

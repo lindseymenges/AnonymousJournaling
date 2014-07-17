@@ -1,0 +1,8 @@
+<h3 class="sign_in_header">Sign in to your account</h3>
+<div class="sign_in_form">
+  <%= form_tag sessions_path do %>
+    <%= text_field_tag :username, nil, :placeholder => "Username", :class => "session" %><br>
+    <%= password_field_tag :password, nil, :placeholder => "Password", :class => "session" %><br>
+    <%= submit_tag 'Sign-in', :class => "session session_submit" %>
+  <% end %>
+</div>

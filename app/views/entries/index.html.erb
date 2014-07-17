@@ -1,0 +1,32 @@
+<div class="user_entries_section">
+  <div class="user_entries_elements">
+    <h3 class="user_entries_header">Your Journal Entries:</h3>
+      <% @user_entries.each do |e| %>
+        <li>
+          <a href='/entries/<%= e.id%>' class="entry_title"><%=e.title%></a><br>
+          <div class="created_at"><%= e.created_at %></div>
+        </li>
+      <% end %>
+    <div class="user_entries_links">
+      <%= link_to 'Write New Entry', new_entry_path, :class => "new_entry_link" %>
+      <%= link_to 'Return Home', root_path, :class => "return_home_link" %>
+    </div>
+  </div>
+</div>
+
+<div class="recent_entries">
+  <div class="recent_entries_elements">
+    <h3 class="recent_entries_header">Recent 'Anonymous Journaling' Entries:</h3>
+    <div class="all_entries">
+      <% @entries.each do |e| %>
+        <li>
+          <a href='/entries/<%= e.id%>' class="entry_title"><%=e.title%></a><br>
+          <%= link_to e.author, user_path(e.user_id), :class => "author_link" %><br>
+          <div class="created_at"><%= e.created_at %></div>
+        </li>
+      <% end %>
+      </div>
+    <div class="pagination"><%= will_paginate @entries %></div>
+  </div>
+</div>
+

@@ -1,0 +1,9 @@
+<div id="entry_author">"<%= @entry.title %>" - <%= @entry.author %></div>
+<div class="entry_content"><%= @entry.content.gsub(/\n/, '<br/>').html_safe %></div>
+<div class="entry_buttons">
+<% if @entry.user_id == session[:user_id] %>
+  <%= link_to 'Delete This Entry', entry_path(@entry), :method => :delete, :id => "delete_entry" %>
+<% end %>
+
+<%= link_to 'Return Home', root_path, :id => "return_to_entries" %>
+</div>
