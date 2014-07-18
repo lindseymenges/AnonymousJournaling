@@ -10,7 +10,8 @@
 <body>
   <div class="nav_bar">
     <header>
-    <%= link_to "Anonymous Journaling", root_path %>
+    <!-- <span><%= image_tag("/info_circle.png", :id => "info_img") %></span> -->
+    <%= link_to "Anonymous Journaling", root_path, :id => "header_home" %>    
     <% if session[:user_id] %>
       <%= link_to "Log Out", session_path(session[:user_id]), :id => "log_out", :method => :delete %>
     <% end %>
