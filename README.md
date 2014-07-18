@@ -5,4 +5,4 @@ Anonymous Journaling is a webapp that allows you to write journal entries that c
 
 Users can create accounts, write journal entries, read the entries of other users, and follow their journals if you want to keep up with them.
 
-Anonymous Journaling is currently under construction.
+Available at: http://anonymousjournaling.herokuapp.com
