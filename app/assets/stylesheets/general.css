@@ -16,11 +16,11 @@ a{
 header{
   text-align: center; 
   font-size: 3.00em;
+  align: center;
 }
 
 #header_home{
   color: #636c4d;
-  align: center;
 }
 
 /*#info_img{
@@ -30,8 +30,9 @@ header{
 }*/
 
 #log_out{
-  margin-top: 2%;
-  margin-right: -7%;
+  position: fixed;
+  margin-top: 1%;
+  margin-left: 7%;
   background-color: #636c4d;
   padding: 0.5% 1%;
   color: #a1b9b9;
