@@ -30,7 +30,7 @@ header{
 }*/
 
 #log_out{
-  position: fixed;
+  position: absolute;
   margin-top: 1%;
   margin-left: 7%;
   background-color: #636c4d;
