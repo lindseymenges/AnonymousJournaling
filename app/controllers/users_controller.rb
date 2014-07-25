@@ -25,18 +25,21 @@ class UsersController < ApplicationController
         session[:user_id] = @user.id
         redirect_to root_path
       else
-        render :new
+        render :new_with_error
       end
     else
-      render :new
+      render :new_with_error
     end
   end
 
   def destroy
     @user = User.find(session[:user_id])
+    puts @user
     posts = Entry.find_by_user_id(@user.id)
-    posts.destroy
-    @user.destroy
+    if posts != nil
+      Entry.destroy(posts)
+    end
+    User.destroy(@user)
     session.clear
     redirect_to root_path
   end

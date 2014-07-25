@@ -13,6 +13,10 @@
   color: #55a393;
 }
 
+#new_user_error_message{
+  color: red;
+}
+
 .session_submit, .new_user_submit{
   padding: 2% 5%;
   background-color: #9f9b75;
