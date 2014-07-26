@@ -8,13 +8,13 @@
 .index_buttons{
   float: right;
   width: 49%;
-  margin-top: 10%;
+  margin-top: 3%;
 }
 
 .welcome_message h2, .welcome_message p{
   text-align: right;
   margin-right: 5%;
-  margin-left: 40%;
+  margin-left: 10%;
   margin-top: 0px;
 }
 
