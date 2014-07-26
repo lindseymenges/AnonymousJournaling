@@ -31,8 +31,16 @@
   <div class="button delete_account"><%= link_to 'Delete Account', user_path(session[:user_id]), :method => :delete %></div>
 
 <% else %>
+  <div class="welcome_message">
+    <p>Anonymous Journaling is a Rails-based webapp that allows you to write and read journal entries while remaining anonymous.</p>
+    <p>When you create an account, you are assigned a completely random public screen name. This screen name becomes your identity and allows other users to read your journal entries.</p>
+    <p>A.J. combines the emotional release of journaling and revealing your inner thoughts to others while providing you with the safety of a hidden identity.</p>
+    <h2>Welcome to Anonymous Journaling!</h2>
+  </div>
 
-  <div class="button sign_in"><%= link_to "Sign-in", new_session_path %></div>
-  <div class="button sign_up"><%= link_to "Sign-up", new_user_path %></div>
+  <div class="index_buttons">
+    <div class="button sign_in"><%= link_to "Sign-in", new_session_path %></div>
+    <div class="button sign_up"><%= link_to "Sign-up", new_user_path %></div>
+  </div>
 
 <% end %>

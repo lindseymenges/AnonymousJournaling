@@ -1,4 +1,40 @@
-.sign_in, .sign_up, .view_journal, .log_out{
+.welcome_message{
+  float: left;
+  width: 49%;
+  border-right: solid 1px #58a291;
+  margin-top: 3%;
+}
+
+.index_buttons{
+  float: right;
+  width: 49%;
+  margin-top: 10%;
+}
+
+.welcome_message h2, .welcome_message p{
+  text-align: right;
+  margin-right: 5%;
+  margin-left: 40%;
+  margin-top: 0px;
+}
+
+.welcome_message p{
+  font-size: 1.25em;
+  color: #636c4d;
+}
+
+.welcome_message h2{
+  font-size: 2.25em;
+  color: #58a291;
+}
+
+.sign_in, .sign_up{
+  margin-bottom: 10%;
+  width: 50%;
+  padding: 3%;
+}
+
+.view_journal, .log_out{
   margin-top: 10%;
   margin-left: 30%;
   width: 33%;
