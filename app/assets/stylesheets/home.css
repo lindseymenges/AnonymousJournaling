@@ -11,7 +11,7 @@
   margin-top: 3%;
 }
 
-.welcome_message h2, .welcome_message p{
+.welcome_message h2, .welcome_message p, .welcome_message h6{
   text-align: right;
   margin-right: 5%;
   margin-left: 10%;
@@ -25,6 +25,15 @@
 
 .welcome_message h2{
   font-size: 2.25em;
+  color: #58a291;
+}
+
+.welcome_message h6{
+  color: #636c4d;
+  font-size: 0.75em;
+}
+
+.welcome_message a{
   color: #58a291;
 }
 
