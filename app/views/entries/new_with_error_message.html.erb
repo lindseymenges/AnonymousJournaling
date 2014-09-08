@@ -1,0 +1,12 @@
+<div class="new_entry_elements">
+  <h3 class="new_entry_header">Write Your New Entry</h3>
+  <p id="entry_error_message">Make sure your entry has a title and content before hitting 'Publish'</p>
+  <%= form_for @entry do |f| %>
+    <%= f.label :title, :class => "new_entry_title" %><br>
+    <%= f.text_field :title, :class => "new_entry_title_area" %><br>
+    <%= f.label :content, :class => "new_entry_content" %><br>
+    <%= f.text_area :content, :class => "new_entry_content_area" %><br>
+    <%= f.submit "Publish", :class => "new_entry_submit" %>
+  <% end %>
+  <%= link_to 'Return Home', root_path, :class => "home_link" %>
+</div>

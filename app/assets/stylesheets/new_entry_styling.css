@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+/*#entry_error_message{
+  color: red;
+  font-size: 4.00em;
+}*/
+
 .new_entry_header{
   font-size: 2.00em;
   margin: 0px auto;

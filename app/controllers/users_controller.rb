@@ -25,7 +25,7 @@ class UsersController < ApplicationController
         session[:user_id] = @user.id
         redirect_to root_path
       else
-        render :new_with_error
+        render :new_with_field_error
       end
     else
       render :new_with_error
